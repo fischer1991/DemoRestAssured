@@ -5,6 +5,7 @@
     <classes>
       <class name="AddDeleteBasico">
         <methods>
+          <include name="getData"/>
           <include name="AddandDeletePlace"/>
         </methods>
       </class> <!-- AddDeleteBasico -->

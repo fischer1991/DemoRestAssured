@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4190" started-at="2019-02-20T22:34:05Z" finished-at="2019-02-20T22:34:09Z">
+  <suite name="Default suite" duration-ms="13462" started-at="2019-02-21T00:00:58Z" finished-at="2019-02-21T00:01:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4190" started-at="2019-02-20T22:34:05Z" finished-at="2019-02-20T22:34:09Z">
+    <test name="Default test" duration-ms="13462" started-at="2019-02-21T00:00:58Z" finished-at="2019-02-21T00:01:11Z">
       <class name="AddDeleteBasico">
-        <test-method status="PASS" signature="AddandDeletePlace()[pri:0, instance:AddDeleteBasico@4e1d422d]" name="AddandDeletePlace" duration-ms="4152" started-at="2019-02-20T22:34:05Z" finished-at="2019-02-20T22:34:09Z">
+        <test-method status="PASS" signature="getData()[pri:0, instance:AddDeleteBasico@3632be31]" name="getData" is-config="true" duration-ms="18" started-at="2019-02-21T00:00:58Z" finished-at="2019-02-21T00:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData -->
+        <test-method status="PASS" signature="AddandDeletePlace()[pri:0, instance:AddDeleteBasico@3632be31]" name="AddandDeletePlace" duration-ms="13414" started-at="2019-02-21T00:00:58Z" finished-at="2019-02-21T00:01:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddandDeletePlace -->
