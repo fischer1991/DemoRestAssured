@@ -34,7 +34,7 @@ public class AddDeleteBasico {
 		RestAssured.baseURI = prop.getProperty("HOST");
 		Response r = given().
 
-				queryParam("key", prop.getProperty("KEY")).body(payLoad.dadosJson()).when().post("/maps/api/place/add/json").then()
+				queryParam("key", prop.getProperty("KEY")).body(payLoad.dadosJson()).when().post(resources.adicionarJson()).then()
 				.assertThat().statusCode(200).and().contentType(ContentType.JSON).and().body("status", equalTo("OK"))
 				.extract().response();
 
@@ -46,7 +46,7 @@ public class AddDeleteBasico {
 		System.out.println(placeId);
 
 		// Pegar o place ID e inserir no Delete request
-		given().queryParam("key", "qaclick123").body("{" + "\"place_id\" : \"" + placeId + "\"" + "}").when()
+		given().queryParam("key", prop.getProperty("KEY")).body("{" + "\"place_id\" : \"" + placeId + "\"" + "}").when()
 				.post(resources.deletarJson()).then().assertThat().statusCode(200).and().contentType(ContentType.JSON)
 				.and().body("status", equalTo("OK"));
 
